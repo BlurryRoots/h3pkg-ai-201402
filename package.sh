@@ -15,9 +15,9 @@ function h3pkg_script_build_package () {
 	local raw_base=${H3PKG_PACKAGE_HOME}/.cache/WS2014-AI
 	#
 	cd ${H3PKG_PACKAGE_HOME} && {
-		rm -rf vs
-		mkdir -p vs
-		cd vs && {
+		rm -rf ai
+		mkdir -p ai
+		cd ai && {
 			mkdir -p doc lab etc
 
 			cp ${raw_base}/Praktikum/* lab
