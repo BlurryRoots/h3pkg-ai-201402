@@ -20,8 +20,8 @@ function h3pkg_script_build_package () {
 		cd vs && {
 			mkdir -p doc lab etc
 
-			cp ${H3PKG_PACKAGE_HOME}/WS2014-AI/Praktikum/* lab
-			cp ${H3PKG_PACKAGE_HOME}/WS2014-AI/Vorlesung/* doc
+			cp ${raw_base}/WS2014-AI/Praktikum/* lab
+			cp ${raw_base}/WS2014-AI/Vorlesung/* doc
 			rm -f "doc/MPS Spezifikation.pdf"
 
 			tar -jcf ai.tar doc lab etc
